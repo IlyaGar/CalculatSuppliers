@@ -1,0 +1,85 @@
+﻿@page "/index"
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<h2>Панель поиска по выбору</h2>
+<div>
+    <form method="post">
+        <div class="form-row">
+            <div class="col-md-12">
+                <div class="form-inline">
+                    <label class="label-marg">
+                        <span>№ документа:</span>
+                        <input type="number" name="number" id="number" class="form-control" />
+                    </label>
+                    <label class="label-marg">
+                        <span>Значение:</span>
+                        <input type="text" name="name" id="name" class="form-control" />
+                    </label>
+                    <label class="label-marg">
+                        <span>Статус:</span>
+                        <input type="text" name="status" id="status" class="form-control" />
+                    </label>
+                </div>
+                <div class="form-inline">
+                    <label class="label-marg">
+                        <span>Дата с:</span>
+                        <input type="date" name="dateStart" id="dateStart" class="form-control" />
+                    </label>
+                    <label class="label-marg">
+                        <span>по:</span>
+                        <input type="date" name="dateFinish" id="dateFinish" class="form-control" />
+                    </label>
+                    <button type="submit" class="btn btn-primary" data-toggle="tooltip" data-placement="bottom" title="Отобрать документы">Отобрать</button>
+                </div>
+            </div>
+
+        </div>
+
+    </form>
+</div>
+<div class="form-inline" style="margin-left: 15px">
+    <label>
+        <span>Отобрано:</span>
+        <output name="allSelected" class="form-control">0</output>
+    </label>
+    &emsp;
+    <label>
+        <span>Сумма:</span>
+        <output name="sumSelected" class="form-control">0</output>
+    </label>
+</div>
+<hr />
+<table class="table table-hover">
+    <thead>
+        <tr>
+            <th scope="col">№ Документа</th>
+            <th scope="col">Наименование</th>
+            <th scope="col">Статус</th>
+            <th scope="col">Пользователь</th>
+            <th scope="col">Дата</th>
+            <th scope="col">Сумма</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th scope="row">1</th>
+            <td>Заявка на оплату</td>
+            <td>Ок</td>
+            <td>Марк</td>
+            <td>22.12.18</td>
+            <td>5201</td>
+        </tr>
+        <tr>
+            <th scope="row">2</th>
+            <td>Заявка</td>
+            <td>Ок</td>
+            <td>Джон</td>
+            <td>22.13.19</td>
+            <td>332</td>
+        </tr>
+    </tbody>
+</table>
+

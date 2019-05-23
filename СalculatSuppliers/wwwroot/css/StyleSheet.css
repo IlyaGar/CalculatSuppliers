@@ -1,0 +1,52 @@
+﻿output {
+    min-width: 100px;
+    margin-right: 20px;
+}
+
+.label-marg {
+    margin-right: 20px;
+}
+
+.container-signin {
+    width: 620px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.container-layout {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.child {
+    padding: 0.5%;
+    float: left;
+    width: auto;
+    margin-right: 2%;
+    margin-left: 12px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+    .child:last-child {
+        margin-right: 0;
+    }
+
+output {
+    margin-right: 10px;
+}
+
+.output-num {
+    min-width: 100px;
+}
+
+.output-name {
+    min-width: 200px;
+}
+
+.right-group {
+    float: right;
+    display: inline-block;
+}

@@ -1,0 +1,111 @@
+﻿@page
+@model СalculatSuppliers.Pages.FormWorkWithDocumentsModel
+@{
+    ViewData["Title"] = "FormWorkWithDocuments";
+}
+<h2>Форма работы с документом</h2>
+
+<div class="form-row">
+    <div class="col-md-12">
+        <div class="form-inline">
+            <label>
+                <span>№ документа:</span>
+                <output name="numDoc" class="form-control mb-2 mr-sm-2 output-num" id="numberDoc"> - </output>
+            </label>
+            <label>
+                <span>Наименоваие:</span>
+                <output name="nameDoc" class="form-control mb-2 mr-sm-2 output-name" id="nameDoc"> - </output>
+            </label>
+            <label>
+                <span>Дата создания:</span>
+                <output name="dateCreated" class="form-control mb-2 mr-sm-2" id="dateCreated"> 15.06.2019 </output>
+            </label>
+        </div>
+    </div>
+</div>
+<div class="row" style="display: block">
+    <div class="col-md-8">
+        <div class="form-inline">
+            <div class="child">
+                <button type="button" class="btn btn-light" name="partner" data-toggle="tooltip" data-placement="bottom" title="Выбор контрагентов из списка">
+                    <img src="~/images/agent2.png" width="20" height="20" />Выбрать контрагентов
+                </button>
+                <button type="button" class="btn btn-light" name="lees" data-toggle="tooltip" data-placement="bottom" title="Расчет остатков">
+                    <img src="~/images/sclad1.png" width="20" height="20" />Остатки
+                </button>
+            </div>
+            <div class="child">
+                <label>Отчеты:</label>
+                <button type="button" class="btn btn-light" name="" data-toggle="tooltip" data-placement="bottom" title="Очет">
+                    <img src="~/images/sclad1.png" width="20" height="20" />
+                </button>
+                <button type="button" class="btn btn-light" name="" data-toggle="tooltip" data-placement="bottom" title="Очет">
+                    <img src="~/images/report2.png" width="20" height="20" />
+                </button>
+            </div>
+            <div class="child">
+                <label>Импорт данных:</label>
+                <button type="button" class="btn btn-light" name="" data-toggle="tooltip" data-placement="bottom" title="Импорт данных в 1С">
+                    <img src="~/images/icons8-1с-30.png" width="20" height="20" />
+                </button>
+                <button type="button" class="btn btn-light" name="" data-toggle="tooltip" data-placement="bottom" title="Импорт данных в файл">
+                    <img src="~/images/import1.png" width="20" height="20" />
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="right-group">
+            <div class="form-inline">
+                <label>
+                    <span>Сумма:</span>
+                    <output name="summ" class="form-control mb-2 mr-sm-2" id="summ">12590</output>
+                </label>
+                    &emsp;
+                    <button type="button" class="btn btn-danger" name="" data-toggle="tooltip" data-placement="bottom" title="Удалить документ">
+                        <img src="~/images/delete-512.png" width="20" height="20" />
+                </button>
+                
+            </div>
+        </div>
+    </div>
+</div>
+<br />
+<hr />
+<br />
+<table class="table table-hover">
+    <thead>
+        <tr>
+            <th scope="col">Контрагент</th>
+            <th scope="col">Сальдо</th>
+            <th scope="col">Последняя оплата</th>
+            <th scope="col">Остатки</th>
+            <th scope="col">Задолжность</th>
+            <th scope="col">Оплатить</th>
+            <th scope="col">Примечание</th>
+            <th scope="col">Договор</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th scope="row">ООО Комплект</th>
+            <td>1462</td>
+            <td>30.01.2018</td>
+            <td>235</td>
+            <td>23</td>
+            <td>5201</td>
+            <td>инструмент</td>
+            <td>520102</td>
+        </tr>
+        <tr>
+            <th scope="row">ООО Шуруп</th>
+            <td>2301</td>
+            <td>12.05.2018</td>
+            <td>3325</td>
+            <td>954</td>
+            <td>652</td>
+            <td>шуруп</td>
+            <td>654215</td>
+        </tr>
+    </tbody>
+</table>
